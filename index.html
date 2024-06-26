@@ -97,7 +97,7 @@ dd{margin-left:0}
 }
 </style>
 <meta name="color-scheme" content="light">
-<meta name="revision" content="931991280fea2df88a1f42a0c22ea151b95343f1">
+<meta name="revision" content="576288e35f50979b7a6d654e97b49d5a7e90e806">
 <meta name="description" content="HTML Accessibility API Mappings (HTML-AAM) defines how user agents map HTML [HTML] elements and attributes to platform
         accessibility application programming interfaces (APIs). It leverages and extends the
         Core Accessibility API Mappings 1.2 and the Accessible Name and Description Computation 1.2 for use with the HTML host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events
@@ -198,7 +198,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     null
   ],
   "a11y": false,
-  "gitRevision": "931991280fea2df88a1f42a0c22ea151b95343f1",
+  "gitRevision": "576288e35f50979b7a6d654e97b49d5a7e90e806",
   "publishISODate": "2024-06-26T00:00:00.000Z",
   "generatedSubtitle": "W3C Editor's Draft 26 June 2024"
 }</script>
@@ -13512,7 +13512,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <a href="https://msdn.microsoft.com/en-us/library/dd373608%28v=VS.85%29.aspx"><abbr title="Microsoft Active Accessibility">MSAA</abbr></a> + <a href="http://accessibility.linuxfoundation.org/a11yspecs/ia2/docs/html/">IAccessible2</a>
               </th>
               <td>
-                <span class="type">Relations:</span> <code>IA2_RELATION_DETAILS_FOR</code> points to invoking element. <a href="#att-popover-comments" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">See Comments</a>.
+                <span class="type">Relations:</span> <code>IA2_RELATION_DETAILS_FOR</code> points to invoking element. <a href="#att-popover-comments">See Comments</a>.
                 <div class="objattrs">
                   <span class="type">Object attributes:</span>
                   <code>ispopup: &lt;value&gt;</code> where <code>&lt;value&gt;</code> reflects the <a href="https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute">popover</a> type.
@@ -13523,13 +13523,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 A details relation is made with the invoking element, if an invoking element exists which meets the conditions for necessitating a details relationship.
-                <a href="#att-popover-comments" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-0">See Comments</a>.
+                <a href="#att-popover-comments">See Comments</a>.
               </td>
             </tr>
             <tr>
               <th><a href="https://gnome.pages.gitlab.gnome.org/atk/">ATK</a></th>
               <td>
-                <p><span class="type">Relations:</span> <code>RELATION_DETAILS_FOR</code> points to invoking element. <a href="#att-popover-comments" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-1">See Comments</a>.</p>
+                <p><span class="type">Relations:</span> <code>RELATION_DETAILS_FOR</code> points to invoking element. <a href="#att-popover-comments">See Comments</a>.</p>
                 <div class="objattrs">
                   <span class="type">Object attributes:</span>
                   <code>ispopup: &lt;value&gt;</code> where <code>&lt;value&gt;</code> reflects the <a href="https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute">popover</a> type.
@@ -13544,7 +13544,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </td>
             </tr>
             <tr>
-              <th>Comments</th>
+              <th id="att-popover-comments">Comments</th>
               <td>
                 <p>User agents <em class="rfc2119">MUST NOT</em> expose a details relation between a <code>popover</code> and its invoking element under the following conditions:</p>
                 <ul>
