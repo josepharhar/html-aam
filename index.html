@@ -97,7 +97,7 @@ dd{margin-left:0}
 }
 </style>
 <meta name="color-scheme" content="light">
-<meta name="revision" content="7685e0c5feba2447d764559457d7aaefda0e39f9">
+<meta name="revision" content="be3502401c60459732be371d268bd7100bb13791">
 <meta name="description" content="HTML Accessibility API Mappings (HTML-AAM) defines how user agents map HTML [HTML] elements and attributes to platform
         accessibility application programming interfaces (APIs). It leverages and extends the
         Core Accessibility API Mappings 1.2 and the Accessible Name and Description Computation 1.2 for use with the HTML host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events
@@ -198,16 +198,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     null
   ],
   "a11y": false,
-  "gitRevision": "7685e0c5feba2447d764559457d7aaefda0e39f9",
-  "publishISODate": "2024-06-26T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 26 June 2024"
+  "gitRevision": "be3502401c60459732be371d268bd7100bb13791",
+  "publishISODate": "2024-07-11T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 11 July 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
   <body class="h-entry" data-cite="HTML core-aam accname wai-aria dom infra"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">HTML Accessibility API Mappings 1.0</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-26">26 June 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-07-11">11 July 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -1378,7 +1378,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             
             <tr>
               <th>Comments</th>
-              <td></td>
+              <td>User agents <em class="rfc2119">MUST</em> ignore the <code>aria-hidden</code> attribute if specified on the <code>body</code> element.</td>
             </tr>
           </tbody>
         </table>
@@ -3156,7 +3156,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             
             <tr>
               <th>Comments</th>
-              <td></td>
+              <td>User agents <em class="rfc2119">MUST</em> ignore the <code>aria-hidden</code> attribute if specified on the <code>html</code> element.</td>
             </tr>
           </tbody>
         </table>
@@ -16585,6 +16585,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <section id="substantive-changes-since-moving-to-the-accessible-rich-internet-applications-working-group-03-nov-2019"><div class="header-wrapper"><h4 id="a-1-1-substantive-changes-since-moving-to-the-accessible-rich-internet-applications-working-group-03-nov-2019"><bdi class="secno">A.1.1 </bdi>Substantive changes since moving to the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications Working Group</a> (03-Nov-2019)</h4><a class="self-link" href="#substantive-changes-since-moving-to-the-accessible-rich-internet-applications-working-group-03-nov-2019" aria-label="Permalink for Appendix A.1.1"></a></div>
           
           <ul>
+            <li>11-July-2024: User Agents ignore <code>aria-hidden=true</code> on <code>body</code> and <code>html</code> elements. See <a href="https://github.com/w3c/html-aam/pull/516">GitHub PR 516</a>.</li>
             <li>06-June-2024: Add concept of Minimum Role. See <a href="https://github.com/w3c/html-aam/pull/454">GitHub PR 454</a>.</li>
             <li>06-June-2024: Add <code>popover</code>, <code>popovertarget</code> and <code>popovertargetaction</code> mappings. See <a href="https://github.com/w3c/html-aam/pull/481">GitHub PR 481</a>.</li>
             <li>09-Oct-2023: Acknowledge use of <code>hr</code> element within <code>select</code> element. See <a href="https://github.com/w3c/html-aam/pull/504">GitHub PR 504</a>.</li>
@@ -16738,7 +16739,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <p>The following people contributed to the development of this document.</p>
         <div class="section" id="ack_group">
           
-          <ul id="gh-contributors"><li><a href="https://github.com/adampage">Adam Page</a></li><li><a href="https://github.com/AlexLloyd0">Alex Lloyd</a></li><li><a href="https://github.com/asurkov">Alexander Surkov</a></li><li><a href="https://github.com/boggydigital">Bogdan Brinza</a></li><li><a href="https://github.com/carmacleod">Carolyn MacLeod</a></li><li><a href="https://github.com/dandclark">Dan Clark</a></li><li><a href="https://github.com/deniak">Denis Ah-Kang</a></li><li><a href="https://github.com/dontcallmedom">Dominique Hazael-Massieux</a></li><li><a href="https://github.com/einSelbst">einSelbst</a></li><li><a href="https://github.com/cookiecrook">James Craig</a></li><li><a href="https://github.com/jnurthen">James Nurthen</a></li><li><a href="https://github.com/jasonkiss">Jason Kiss</a></li><li><a href="https://github.com/joanmarie">joanmarie</a></li><li><a href="https://github.com/Johanna-hub">Johanna</a></li><li><a href="https://github.com/jongund">Jon Gunderson</a></li><li><a href="https://github.com/LJWatson">Léonie Watson</a></li><li><a href="https://github.com/marcoscaceres">Marcos Cáceres</a></li><li><a href="https://github.com/melanierichards">Melanie Richards</a></li><li><a href="https://github.com/nschonni">Nick Schonning</a></li><li><a href="https://github.com/pkra">Peter Krautzberger</a></li><li><a href="https://github.com/plehegar">Philippe Le Hegaret</a></li><li><a href="https://github.com/rahimabdi">Rahim Abdi</a></li><li><a href="https://github.com/sidvishnoi">Sid Vishnoi</a></li><li><a href="https://github.com/zcorpan">Simon Pieters</a></li><li><a href="https://github.com/stevefaulkner">Steve Faulkner</a></li><li><a href="https://github.com/spectranaut">Valerie Young</a></li><li><a href="https://github.com/vikas-parashar">Vikas Parashar</a></li><li><a href="https://github.com/siusin">Xiaoqian Wu</a></li><li><a href="https://github.com/YummyBacon5">Yummy_Bacon5</a></li><li><a href="https://github.com/ylafon">Yves Lafon</a></li></ul>
+          <ul id="gh-contributors"><li><a href="https://github.com/adampage">Adam Page</a></li><li><a href="https://github.com/AlexLloyd0">Alex Lloyd</a></li><li><a href="https://github.com/asurkov">Alexander Surkov</a></li><li><a href="https://github.com/boggydigital">Bogdan Brinza</a></li><li><a href="https://github.com/carmacleod">Carolyn MacLeod</a></li><li><a href="https://github.com/dandclark">Dan Clark</a></li><li><a href="https://github.com/daniel-montalvo">Daniel Montalvo</a></li><li><a href="https://github.com/deniak">Denis Ah-Kang</a></li><li><a href="https://github.com/dontcallmedom">Dominique Hazael-Massieux</a></li><li><a href="https://github.com/einSelbst">einSelbst</a></li><li><a href="https://github.com/cookiecrook">James Craig</a></li><li><a href="https://github.com/jnurthen">James Nurthen</a></li><li><a href="https://github.com/jasonkiss">Jason Kiss</a></li><li><a href="https://github.com/joanmarie">joanmarie</a></li><li><a href="https://github.com/Johanna-hub">Johanna</a></li><li><a href="https://github.com/jongund">Jon Gunderson</a></li><li><a href="https://github.com/LJWatson">Léonie Watson</a></li><li><a href="https://github.com/marcoscaceres">Marcos Cáceres</a></li><li><a href="https://github.com/melanierichards">Melanie Richards</a></li><li><a href="https://github.com/nschonni">Nick Schonning</a></li><li><a href="https://github.com/pkra">Peter Krautzberger</a></li><li><a href="https://github.com/plehegar">Philippe Le Hegaret</a></li><li><a href="https://github.com/rahimabdi">Rahim Abdi</a></li><li><a href="https://github.com/sidvishnoi">Sid Vishnoi</a></li><li><a href="https://github.com/zcorpan">Simon Pieters</a></li><li><a href="https://github.com/stevefaulkner">Steve Faulkner</a></li><li><a href="https://github.com/spectranaut">Valerie Young</a></li><li><a href="https://github.com/vikas-parashar">Vikas Parashar</a></li><li><a href="https://github.com/siusin">Xiaoqian Wu</a></li><li><a href="https://github.com/YummyBacon5">Yummy_Bacon5</a></li><li><a href="https://github.com/ylafon">Yves Lafon</a></li></ul>
           
           </div>
         <section class="section" id="ack_funders"><div class="header-wrapper"><h4 id="a-2-1-enabling-funders"><bdi class="secno">A.2.1 </bdi>Enabling funders</h4><a class="self-link" href="#ack_funders" aria-label="Permalink for Appendix A.2.1"></a></div>
@@ -16753,7 +16754,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-references"><bdi class="secno">B. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="b-1-normative-references"><bdi class="secno">B.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix B.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-accname-1.2">[accname-1.2]</dt><dd>
-      <a href="https://www.w3.org/TR/accname-1.2/"><cite>Accessible Name and Description Computation 1.2</cite></a>. Bryan Garaventa; Melanie Sumner.  W3C. 21 June 2024. W3C Working Draft. URL: <a href="https://www.w3.org/TR/accname-1.2/">https://www.w3.org/TR/accname-1.2/</a>
+      <a href="https://www.w3.org/TR/accname-1.2/"><cite>Accessible Name and Description Computation 1.2</cite></a>. Bryan Garaventa; Melanie Sumner.  W3C. 10 July 2024. W3C Working Draft. URL: <a href="https://www.w3.org/TR/accname-1.2/">https://www.w3.org/TR/accname-1.2/</a>
     </dd><dt id="bib-core-aam-1.2">[core-aam-1.2]</dt><dd>
       <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Alexander Surkov.  W3C. 21 June 2024. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
     </dd><dt id="bib-html">[HTML]</dt><dd>
