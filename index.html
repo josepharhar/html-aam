@@ -97,7 +97,7 @@ dd{margin-left:0}
 }
 </style>
 <meta name="color-scheme" content="light">
-<meta name="revision" content="f7cbe7e9a5c436847876951572e02dd290cc1ea1">
+<meta name="revision" content="4f38467c43d20803b09b0d33284cb28f34176932">
 <meta name="description" content="HTML Accessibility API Mappings (HTML-AAM) defines how user agents map HTML [HTML] elements and attributes to platform
         accessibility application programming interfaces (APIs). It leverages and extends the
         Core Accessibility API Mappings 1.2 and the Accessible Name and Description Computation 1.2 for use with the HTML host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events
@@ -198,7 +198,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     null
   ],
   "a11y": false,
-  "gitRevision": "f7cbe7e9a5c436847876951572e02dd290cc1ea1",
+  "gitRevision": "4f38467c43d20803b09b0d33284cb28f34176932",
   "publishISODate": "2024-07-16T00:00:00.000Z",
   "generatedSubtitle": "W3C Editor's Draft 16 July 2024"
 }</script>
@@ -13658,6 +13658,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                   <li>The element's implicit or explicit <code>popovertargetaction</code> is the "<code>auto</code>" state and the element is a descendant of the <code>popover</code> it is associated with.</li>
                   
                 </ul>
+                <div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-11" aria-level="4"><span>Note</span></div><p class="">A button that represents a <a href="https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button">submit button</a> with a <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner">form owner</a> cannot invoke a popover.</p></div>
               </td>
             </tr>
           </tbody>
@@ -16239,7 +16240,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <a href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-description">accessible description</a>. There are different rules provided for several different types of
         <a class="termref informative" data-lt="element" data-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a>, <a class="termref informative" data-lt="node" data-type="dfn" href="https://dom.spec.whatwg.org/#concept-node">nodes</a>, and combinations of markup.
       </p>
-      <div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-11" aria-level="3"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="3"><span>Note</span></div><p class="">
         User Agents notify assistive technology when relevant accessibility information changes, sometimes by destroying and recreating the accessibility object, or sometimes by notifying of changes
         to the object per the specified
         <a href="https://www.w3.org/TR/core-aam-1.2/#event-aria-label">name change event mappings</a> and <a href="https://www.w3.org/TR/core-aam-1.2/#event-aria-describedby">description change event mappings</a>.
@@ -16416,7 +16417,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </li>
             <li>
               Otherwise use <code>alt</code> attribute, even if its value is the empty string.
-              <div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="5"><span>Note</span></div><div class="">
+              <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><div class="">
                 An <code>img</code> with an <code>alt</code> attribute whose value is the empty string is mapped to the
                 <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-presentation"><code>presentation</code></a> role. It has no accessible name.
               </div></div>
@@ -16490,7 +16491,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <li>Otherwise use the <code>title</code> attribute.</li>
             <li>If none of the above yield a usable text string there is no <a href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-name">accessible name</a>.</li>
           </ol>
-          <div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><p class="">
+          <div class="note" role="note" id="issue-container-generatedID-14"><div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>Note</span></div><p class="">
             The document referenced by the <code>src</code> of the <code>iframe</code> element gets its name from that document's <code>title</code> element, like any other document. If there is no <code>title</code> provided, there is no
             accessible name.
           </p></div>
