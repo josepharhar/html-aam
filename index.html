@@ -97,7 +97,7 @@ dd{margin-left:0}
 }
 </style>
 <meta name="color-scheme" content="light">
-<meta name="revision" content="4f38467c43d20803b09b0d33284cb28f34176932">
+<meta name="revision" content="6723ad2bf812395c1b32661a2431e61c02fe6e05">
 <meta name="description" content="HTML Accessibility API Mappings (HTML-AAM) defines how user agents map HTML [HTML] elements and attributes to platform
         accessibility application programming interfaces (APIs). It leverages and extends the
         Core Accessibility API Mappings 1.2 and the Accessible Name and Description Computation 1.2 for use with the HTML host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events
@@ -198,16 +198,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     null
   ],
   "a11y": false,
-  "gitRevision": "4f38467c43d20803b09b0d33284cb28f34176932",
-  "publishISODate": "2024-07-16T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 16 July 2024"
+  "gitRevision": "6723ad2bf812395c1b32661a2431e61c02fe6e05",
+  "publishISODate": "2024-08-15T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 15 August 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
   <body class="h-entry" data-cite="HTML core-aam accname wai-aria dom infra"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">HTML Accessibility API Mappings 1.0</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-07-16">16 July 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-08-15">15 August 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -3694,7 +3694,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 <div class="general">Use <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> mapping</div>
-                <div class="ctrltype"><span class="type">Localized Control Type:</span> <code>"email"</code></div>
               </td>
             </tr>
             <tr>
@@ -3972,10 +3971,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             <tr>
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
-                <div class="general">If implemented as a spin button, use <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> mapping for <a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-spinbutton"><code>spinbutton</code></a>.</div>
-                <div class="general">If implemented as a text input:</div>
-                <div class="ctrltype"><span class="type">Control Type:</span> <code>Edit</code></div>
-                <div class="ctrltype"><span class="type">Localized Control Type:</span> <code>"number"</code></div>
+                <div class="general">Use <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> mapping</div>
               </td>
             </tr>
             <tr>
@@ -4030,8 +4026,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 <div class="ctrltype"><span class="type">Control Type:</span> <code>Edit</code></div>
-                <div class="properties"><span class="type">Localized Control Type:</span> <code>"password"</code></div>
-                <div class="properties"><span class="type">Other properties: </span>Set <code>isPassword</code> to <code>true</code></div>
+                <div class="properties"><span class="type">Other properties:</span> <code>isPassword=true</code></div>
               </td>
             </tr>
             <tr>
@@ -4355,7 +4350,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 <div class="general">Use <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> mapping</div>
-                <div class="ctrltype"><span class="type">Localized Control Type:</span> <code>"telephone"</code></div>
               </td>
             </tr>
             <tr>
@@ -4587,7 +4581,6 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 <div class="general">Use <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> mapping</div>
-                <div class="ctrltype"><span class="type">Localized Control Type:</span> <code>"url"</code></div>
               </td>
             </tr>
             <tr>
@@ -15702,7 +15695,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </th>
               <td>
                 <div class="general">
-                  Defines the accessible role, states and other properties, refer to type="<a href="#el-input-text"><code>text</code></a>", type="<a href="#el-input-password"><code>password</code></a>", type="<a href="#el-input-button"><code>button</code></a>", etc
+                  Defines the accessible role, states and other properties, refer to
+                  <code>type="<a href="#el-input-text">text</a>"</code>, <code>type="<a href="#el-input-password">password</a>"</code>, <code>type="<a href="#el-input-button"><code>button</code></a>"</code>,
+                  etc.
                 </div>
               </td>
             </tr>
@@ -15710,7 +15705,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://msdn.microsoft.com/en-us/library/ms726297%28v=VS.85%29.aspx">UIA</a></th>
               <td>
                 <div class="general">
-                  Defines the accessible role, states and other properties, refer to type="<a href="#el-input-text"><code>text</code></a>", type="<a href="#el-input-password"><code>password</code></a>", type="<a href="#el-input-button"><code>button</code></a>", etc
+                  Defines the accessible role, states and other properties, refer to
+                  <code>type="<a href="#el-input-text">text</a>"</code>, <code>type="<a href="#el-input-password">password</a>"</code>, <code>type="<a href="#el-input-button"><code>button</code></a>"</code>,
+                  etc.
                 </div>
               </td>
             </tr>
@@ -15718,7 +15715,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://gnome.pages.gitlab.gnome.org/atk/">ATK</a></th>
               <td>
                 <div class="general">
-                  Defines the accessible role, states and other properties, refer to type="<a href="#el-input-text"><code>text</code></a>", type="<a href="#el-input-password"><code>password</code></a>", type="<a href="#el-input-button"><code>button</code></a>", etc
+                  Defines the accessible role, states and other properties, refer to
+                  <code>type="<a href="#el-input-text">text</a>"</code>, <code>type="<a href="#el-input-password">password</a>"</code>, <code>type="<a href="#el-input-button"><code>button</code></a>"</code>,
+                  etc.
                 </div>
               </td>
             </tr>
@@ -15726,7 +15725,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <th><a href="https://developer.apple.com/reference/appkit/nsaccessibility">AX</a></th>
               <td>
                 <div class="general">
-                  Defines the accessible role, states and other properties, refer to type="<a href="#el-input-text"><code>text</code></a>", type="<a href="#el-input-password"><code>password</code></a>", type="<a href="#el-input-button"><code>button</code></a>", etc
+                  Defines the accessible role, states and other properties, refer to
+                  <code>type="<a href="#el-input-text">text</a>"</code>, <code>type="<a href="#el-input-password">password</a>"</code>, <code>type="<a href="#el-input-button"><code>button</code></a>"</code>,
+                  etc.
                 </div>
               </td>
             </tr>
@@ -16755,9 +16756,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-references"><bdi class="secno">B. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="b-1-normative-references"><bdi class="secno">B.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix B.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-accname-1.2">[accname-1.2]</dt><dd>
-      <a href="https://www.w3.org/TR/accname-1.2/"><cite>Accessible Name and Description Computation 1.2</cite></a>. Bryan Garaventa; Melanie Sumner.  W3C. 10 July 2024. W3C Working Draft. URL: <a href="https://www.w3.org/TR/accname-1.2/">https://www.w3.org/TR/accname-1.2/</a>
+      <a href="https://www.w3.org/TR/accname-1.2/"><cite>Accessible Name and Description Computation 1.2</cite></a>. Bryan Garaventa; Melanie Sumner.  W3C. 2 August 2024. W3C Working Draft. URL: <a href="https://www.w3.org/TR/accname-1.2/">https://www.w3.org/TR/accname-1.2/</a>
     </dd><dt id="bib-core-aam-1.2">[core-aam-1.2]</dt><dd>
-      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Alexander Surkov.  W3C. 21 June 2024. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
+      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Alexander Surkov.  W3C. 13 August 2024. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
     </dd><dt id="bib-html">[HTML]</dt><dd>
       <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
     </dd><dt id="bib-rfc2119">[RFC2119]</dt><dd>
